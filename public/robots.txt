@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dear-next-light.pages.dev/sitemap.xml
