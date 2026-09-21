@@ -10,3 +10,4 @@ if(config&&/^G-[A-Z0-9]+$/.test(config.content)){
  const script=document.createElement('script');script.async=true;script.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(config.content);document.head.append(script);
 }
 document.addEventListener('click',event=>{const card=event.target.closest('a[data-project]');if(card&&typeof window.gtag==='function')window.gtag('event','project_click',{project_name:card.dataset.project,category:card.dataset.category,location:card.dataset.location})});
+const motionButton=document.querySelector(".motion-toggle");if(motionButton)motionButton.addEventListener("click",()=>{const paused=motionButton.closest(".hero").classList.toggle("motion-paused");motionButton.setAttribute("aria-pressed",String(paused));motionButton.textContent=paused?"Resume motion":"Pause motion"});
