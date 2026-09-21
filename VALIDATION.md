@@ -26,3 +26,8 @@ Remaining minor finding: the decorative numbers 01–03 on Featured cards have i
 ## Publishing
 
 Cloudflare Pages Direct Upload. Automatic publishing from GitHub is not connected. See README for updating the site.
+
+## Nature background update
+
+User-provided landscape optimized to WebP: desktop 129606 bytes, mobile 43796 bytes. Four CSS/SVG floating objects (two on mobile), with reduced-motion support and a pause/resume button. Local desktop and 390px screenshots checked; mobile image selection and pause action verified. No browser console errors. The Lighthouse scores above apply to the original version, before this background update.
+

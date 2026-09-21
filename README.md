@@ -62,3 +62,8 @@ public/assets/images/og.png（1200×630）を差し替えます。site.config.js
 ## 確認
 
 /、/privacy、/disclaimer、存在しないパスの404、360/390/768/1024/1440pxの表示、カテゴリ切り替え、キーボードfocusを確認します。JavaScriptが無効でも全作品と本文を閲覧できます。公開後は実際の本番URLでcanonicalとOGP、Lighthouseを再確認してください。
+
+## 背景と浮遊演出
+
+ユーザー提供の風景画像をWebPに最適化し、PC用約130KB・スマホ用約44KBで配信しています。浮遊する図形はインラインSVGとCSSのtransformのみで動き、追加ライブラリはありません。Pause motionで停止でき、prefers-reduced-motion設定では自動的に静止します。画像の差し替え先はpublic/assets/images/nature-hero.webpとnature-hero-mobile.webpです。
+
